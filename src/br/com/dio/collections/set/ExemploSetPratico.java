@@ -16,7 +16,7 @@ public class ExemploSetPratico {
         linguagens.add("Python");
         linguagens.add("Java"); // Duplicado ignorado automaticamente!
 
-        System.out.println("Conjunto (sem duplicatas): " + linguagens);
+        System.out.pr0intln("Conjunto (sem duplicatas): " + linguagens);
         System.out.println("Tamanho do Set: " + linguagens.size());
     }
 }
