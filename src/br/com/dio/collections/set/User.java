@@ -1,4 +1,4 @@
-package br.com.dio.collections.map;
+package br.com.dio.collections.set;
 
 import java.util.Objects;
 

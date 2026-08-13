@@ -1,22 +1,32 @@
 package br.com.dio.collections.set;
 
-import java.util.HashSet;
+import  java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.Set;
 
 /**
  * Módulo 2 - Collections (Set)
- * Estrutura preparada para as próximas aulas do Bootcamp.
+ * Estrutura preparada para as aulas do Bootcamp.
  */
 public class ExemploSetPratico {
 
     public static void demonstrarOperacoes() {
-        System.out.println("\n--- [AULA 3] OPERAÇÕES PRÁTICAS COM SET (CONJUNTOS) ---");
-        Set<String> linguagens = new HashSet<>();
-        linguagens.add("Java");
-        linguagens.add("Python");
-        linguagens.add("Java"); // Duplicado ignorado automaticamente!
+        Set<User> users = new LinkedHashSet<>();
+        users.add(new User(1, "João"));
+        users.add(new User(2, "Bruno"));
+        users.add(new User(3, "Maria"));
+        users.add(new User(4, "Leo"));
+        users.add(new User(5, "Juca"));
+        users.add(new User(6, "Hugo"));
+        users.add(new User(7,"Jurandir"));
+        users.add(new User(8,"Judite"));
 
-        System.out.pr0intln("Conjunto (sem duplicatas): " + linguagens);
-        System.out.println("Tamanho do Set: " + linguagens.size());
+
+        users.removeIf(user -> user.getId() >= 7);
+
+        System.out.println(users);
+
     }
+
 }
+
