@@ -29,8 +29,21 @@ Resumo prático e direto para consulta rápida sobre manuseio de vetores e lista
 
 ---
 
-## 3. Estrutura do Projeto
+## 3. Estrutura do Projeto e Módulos
 
-* `br.com.dio.Main`: Classe principal de execução dos testes.
-* `br.com.dio.ArraysVsArrayList`: Demonstração didática das diferenças de tamanho.
-* `br.com.dio.ExemploArrayListPratico`: Exemplo das operações do dia a dia.
+O projeto está organizado no pacote `br.com.dio.collections` dividido por tópicos e módulos práticos:
+
+### 📦 Modelo Centralizado (`model`)
+* `br.com.dio.collections.model.User`: **Classe de Modelo Centralizada** criada com atributos (`id`, `name`, `age`) e métodos fundamentais (`equals`, `hashCode`, `compareTo`, `toString`). Fica em um único lugar para ser reaproveitada em todos os exemplos práticos de coleções, evitando código duplicado.
+
+### 📋 Módulo List (`list`)
+* `ArraysVsArrayList`: Demonstração didática das diferenças entre arrays estáticos e `ArrayList`.
+* `ExemploArrayListPratico`: Operações do dia a dia com listas dinâmicas (`add`, `remove`, `get`, etc.).
+
+### ⭕ Módulo Set (`set`)
+* `ExemploSetPratico`: Manipulação de conjuntos (`LinkedHashSet`) utilizando a classe modelo `User` e operações como `removeIf`.
+
+### 🗺️ Módulo Map e Primitivos (`map`)
+* `ExemploMapPratico`: Exemplos práticos utilizando a interface `Map`.
+* `ExemploPrimitivos`: Comparação prática entre tipos primitivos e objetos Wrapper (memória Stack vs Heap, aceitação de `null`, Autoboxing/Unboxing e uso da palavra-chave `final`).
+
